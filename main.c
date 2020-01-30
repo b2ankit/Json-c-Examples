@@ -2,8 +2,7 @@
 #include<json-c/json.h>
 
 void num_add(int x, int y){
-    int z = x+y;
-    printf("%d\n",z);
+    printf("%d\n",(x+y));
 }
 
 
@@ -35,7 +34,7 @@ int main(int argc, char **argv){
     
     n_values = json_object_array_length(values);
 
-    printf("length of values is : %lu\n",n_values);
+    // printf("length of values is : %lu\n",n_values);
 
     for(i=0;i<n_values;i++){
         num_values = json_object_array_get_idx(values, i);
